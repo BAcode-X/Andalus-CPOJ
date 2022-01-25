@@ -1,7 +1,7 @@
 # Andalus Competitive Programming Online Judge (ACPOJ)
 
 
-It is an automated judge system to run programming contests. It has a mechanism to submit problem solutions, have them judged fully automatically and provides (web)interfaces for teams, the jury and the general public.
+It is an automated judge system to run programming contests. It has a mechanism to submit problem solutions, have them judged fully automatically, and provides (web)interfaces for teams, the jury, and the general public.
 
 
 ## Requirements
@@ -9,7 +9,7 @@ It is an automated judge system to run programming contests. It has a mechanism 
 
 
 #### Creating Python Virtual Environment 
-### install depenedcies
+### install dependencies
 Right there, you will find the requirements.txt file that has all the great debugging tools, django helpers and some other cool stuff. To install them, simply type:
 
 ```pip install -r requirements.txt```
@@ -20,12 +20,12 @@ Right there, you will find the requirements.txt file that has all the great debu
 First set the database engine (PostgreSQL, MySQL, etc..) in your settings files; 
 projectname/settings.py . Of course, remember to install necessary database driver for your engine. Then define your credentials as well. Time to finish it up:
 
-If you have not database engine or driver , use default database that is sqlite3. 
-comment mysql configration and uncomment sqlite3 in projectname/settings.py
+If you don't have a database engine or driver, use the default database that is sqlite3. 
+Comment the MySQL configuration and uncomment sqlite3 in projectname/settings.py
 
 ```python manage.py migrate```
 
-create super user it is super admin/database admin, simply type :
+create a superuser, which is super admin/database admin, simply type :
 
 ```python manage.py createsuperuser```
 
